@@ -1,0 +1,605 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="" />
+        <title>JASZ</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+        <link href="../../../css2.css?family=Montserrat:wght@200;300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+        <link href="../../../npm/@mdi/font@4.4.95/css/materialdesignicons.min.css" rel="stylesheet" />
+        <link href="assets/plugins/simplebar/simplebar.css" rel="stylesheet" />
+        <link href="assets/plugins/slick/slick.min.css" rel="stylesheet" />
+        <link href="assets/plugins/swiper/swiper-bundle.min.css" rel="stylesheet" />
+        <link id="ekka-css" rel="stylesheet" href="assets/css/ekka.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body class="ec-header-fixed ec-sidebar-fixed ec-sidebar-dark ec-header-light" id="body">
+        <div class="wrapper">
+        <div class="ec-left-sidebar ec-bg-sidebar">
+            <div id="sidebar" class="sidebar ec-sidebar-footer">
+                <div class="ec-brand">
+                    <a href="index.html" title="Ekka"><img class="ec-brand-icon" src="assets/img/logo/logo_jasz.png" alt="" /></a>
+                </div>
+                <div class="ec-navigation" data-simplebar="">
+                    <ul class="nav sidebar-inner" id="sidebar-menu">
+                        <li>
+                            <a class="sidenav-item-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i><span class="nav-text">Home</span></a>
+                            <hr />
+                        </li> 
+                        <li>
+                            <a class="sidenav-item-link" href="inventory.html"><i class="fa fa-indent" aria-hidden="true"></i><span class="nav-text">Inventory</span></a>
+                            <hr />
+                        </li>
+                        <li>
+                            <a class="sidenav-item-link" href=""><i class="fa fa-heart-o" aria-hidden="true"></i><span class="nav-text">Favorites</span></a>
+                            <hr />
+                        </li>
+                         <li>
+                            <a class="sidenav-item-link" href=""><i class="fa fa-shopping-bag" aria-hidden="true"></i><span class="nav-text">Checkout</span></a>
+                            <hr />
+                        </li>
+                         <li>
+                            <a class="sidenav-item-link" href=""><i class="fa fa-film" aria-hidden="true"></i><span class="nav-text">Resources</span></a>
+                            <hr />
+                        </li>
+                        <li>
+                            <a class="sidenav-item-link" href=""><i class="fa fa-opencart" aria-hidden="true"></i><span class="nav-text">Orders</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+            <div class="ec-page-wrapper">
+                <header class="ec-main-header" id="header">
+                    <nav class="navbar navbar-static-top navbar-expand-lg">
+                        <button id="sidebar-toggler" class="sidebar-toggle"></button>
+                         <div class="breadcrumb-wrapper mr-auto mb-0">
+                        <div>
+                            <h1>Product Details</h1>
+                            <p class="breadcrumbs">
+                                <span><a href="index.html">Home</a></span> <span><i class="fa fa-chevron-right"></i></span>Product
+                            </p>
+                        </div>
+                       <!--  <div><a href="product-list.html" class="btn btn-primary">Add Porduct</a></div> -->
+                    </div>
+                        <div class="search-form d-lg-inline-block">
+                            <div class="input-group">
+                                <input name="query" id="search-input" class="form-control" placeholder="search.." autofocus="" autocomplete="off" />
+                                <button type="button" name="search" id="search-btn" class="btn btn-flat"><i class="mdi mdi-magnify"></i></button>
+                            </div>
+                            <div id="search-results-container"><ul id="search-results"></ul></div>
+                        </div>
+                        <div class="navbar-right">
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown user-menu">
+                                    <button class="dropdown-toggle nav-link ec-drop" data-bs-toggle="dropdown" aria-expanded="false"><img src="assets/img/user/user.png" class="user-image" alt="User Image" /></button>
+                                    <ul class="dropdown-menu dropdown-menu-right ec-dropdown-menu">
+                                        <li class="dropdown-header">
+                                            <img src="assets/img/user/user.png" class="img-circle" alt="User Image" />
+                                            <div class="d-inline-block">
+                                                John Deo <small class="pt-1"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="197CPkwMvS42y3qzCqvQdKsdUTLR7qqHi87075377a7674">[email&#160;protected]</a></small>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="user-profile.html"><i class="mdi mdi-account"></i> My Profile</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="mdi mdi-email"></i> Message</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="mdi mdi-diamond-stone"></i> Projects</a>
+                                        </li>
+                                        <li class="right-sidebar-in">
+                                            <a href="javascript:0"><i class="mdi mdi-settings-outline"></i> Setting</a>
+                                        </li>
+                                        <li class="dropdown-footer">
+                                            <a href="index.html"><i class="mdi mdi-logout"></i> Log Out</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
+                <div class="ec-content-wrapper">
+                    <div class="content">
+                        <strong class="details_text">STYLE NO.7859</strong>
+                        <div class="row table_row">
+                            <div class="col-12 col_table">
+                                <table class="itemtable" cellspacing="5">
+                           <tbody>
+                              <tr class="colortr" valign="top">
+                                 <td class="colortdleft" colspan="10"><button class="btn btn-primary1">PINK</button><!-- <strong style="font-size:14px;color:#000;">PINK</strong> --></td>
+                              </tr>
+                              <tr class="colortr1" valign="top">
+                                 <td class="righttd">
+                                    <strong>Size</strong>
+                                    <p>On Hand</p>
+                                    <!-- <button class="btn btn-primary1">Size</button><br>
+                                    <button class="btn btn-primary1 mt-2">On Hand</button> -->
+                                </td>
+                                 <td class="onhandtd">
+                                    <strong>000</strong>
+                                    <p>0</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>00</strong>
+                                    <p>0</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>0</strong>
+                                    <p>0</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>2</strong>
+                                    <p>0</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>4</strong>
+                                    <p>0</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>6</strong>
+                                    <p>0</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>8</strong>
+                                    <p>0</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>10</strong>
+                                    <p>0</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>12</strong>
+                                    <p>0</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>14</strong>
+                                    <p>0</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>16</strong>
+                                    <p>0</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>18</strong>
+                                    <p>0</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>20</strong>
+                                    <p>0</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>22</strong>
+                                    <p>0</p>
+                                 </td>
+                              </tr>
+                              <tr class="colortr" valign="top">
+                                 <td class="righttd">
+                                    Order
+                                    <p style="color:green">Price/Unit</p>
+                                    <p class="pt-2">Delivery</p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372789" title="PINK Size: 000" itemid="1372789" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372789" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372790" title="PINK Size: 00" itemid="1372790" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372790" class="deliverystatus">
+                                       </span>
+                                    </p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372791" title="PINK Size: 0" itemid="1372791" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372791" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372792" title="PINK Size: 2" itemid="1372792" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372792" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372793" title="PINK Size: 4" itemid="1372793" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372793" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372794" title="PINK Size: 6" itemid="1372794" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372794" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372795" title="PINK Size: 8" itemid="1372795" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372795" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372796" title="PINK Size: 10" itemid="1372796" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372796" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372797" title="PINK Size: 12" itemid="1372797" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372797" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372798" title="PINK Size: 14" itemid="1372798" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372798" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372799" title="PINK Size: 16" itemid="1372799" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372799" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372800" title="PINK Size: 18" itemid="1372800" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372800" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372801" title="PINK Size: 20" itemid="1372801" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372801" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372802" title="PINK Size: 22" itemid="1372802" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372802" class="deliverystatus"></span></p>
+                                 </td>
+                              </tr>
+                              <tr class="colortr" valign="top">
+                                 <td class="colortdleft" colspan="10"><button class="btn btn-primary1">BLACK/GOLD</button></td>
+                              </tr>
+                              <tr class="colortr1" valign="top">
+                                 <td class="righttd">
+                                    <strong>Size</strong>
+                                    <p>On Hand</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>000</strong>
+                                    <p>1</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>00</strong>
+                                    <p>1</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>0</strong>
+                                    <p>0</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>2</strong>
+                                    <p>0</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>4</strong>
+                                    <p>0</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>6</strong>
+                                    <p>0</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>8</strong>
+                                    <p>0</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>10</strong>
+                                    <p>0</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>12</strong>
+                                    <p>1</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>14</strong>
+                                    <p>0</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>16</strong>
+                                    <p>0</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>18</strong>
+                                    <p>0</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>20</strong>
+                                    <p>0</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>22</strong>
+                                    <p>0</p>
+                                 </td>
+                              </tr>
+                              <tr class="colortr" valign="top">
+                                 <td class="righttd">
+                                    Order
+                                    <p style="color:green">Price/Unit</p>
+                                    <p class="pt-2">Delivery</p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372523" title="BLACK/GOLD Size: 000" itemid="1372523" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372523" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372524" title="BLACK/GOLD Size: 00" itemid="1372524" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372524" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372525" title="BLACK/GOLD Size: 0" itemid="1372525" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372525" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372526" title="BLACK/GOLD Size: 2" itemid="1372526" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372526" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372527" title="BLACK/GOLD Size: 4" itemid="1372527" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372527" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372528" title="BLACK/GOLD Size: 6" itemid="1372528" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372528" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372529" title="BLACK/GOLD Size: 8" itemid="1372529" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372529" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372530" title="BLACK/GOLD Size: 10" itemid="1372530" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372530" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372531" title="BLACK/GOLD Size: 12" itemid="1372531" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372531" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372532" title="BLACK/GOLD Size: 14" itemid="1372532" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372532" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372533" title="BLACK/GOLD Size: 16" itemid="1372533" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372533" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372534" title="BLACK/GOLD Size: 18" itemid="1372534" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372534" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372535" title="BLACK/GOLD Size: 20" itemid="1372535" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372535" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372536" title="BLACK/GOLD Size: 22" itemid="1372536" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372536" class="deliverystatus"></span></p>
+                                 </td>
+                              </tr>
+                              <tr class="colortr" valign="top">
+                                 <td class="colortdleft" colspan="10"><button class="btn btn-primary1">NUDE/WHITE</button></td>
+                              </tr>
+                              <tr class="colortr1" valign="top">
+                                 <td class="righttd">
+                                    <strong>Size</strong>
+                                    <p>On Hand</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>000</strong>
+                                    <p>3</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>00</strong>
+                                    <p>1</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>0</strong>
+                                    <p>3</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>2</strong>
+                                    <p>0</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>4</strong>
+                                    <p>0</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>6</strong>
+                                    <p>1</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>8</strong>
+                                    <p>2</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>10</strong>
+                                    <p>2</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>12</strong>
+                                    <p>0</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>14</strong>
+                                    <p>1</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>16</strong>
+                                    <p>1</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>18</strong>
+                                    <p>1</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>20</strong>
+                                    <p>0</p>
+                                 </td>
+                                 <td class="onhandtd">
+                                    <strong>22</strong>
+                                    <p>0</p>
+                                 </td>
+                              </tr>
+                              <tr class="colortr" valign="top">
+                                 <td class="righttd">
+                                    Order
+                                    <p style="color:green">Price/Unit</p>
+                                    <p class="pt-2">Delivery</p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372340" title="NUDE/WHITE Size: 000" itemid="1372340" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372340" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372341" title="NUDE/WHITE Size: 00" itemid="1372341" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372341" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372342" title="NUDE/WHITE Size: 0" itemid="1372342" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372342" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372343" title="NUDE/WHITE Size: 2" itemid="1372343" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372343" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372344" title="NUDE/WHITE Size: 4" itemid="1372344" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372344" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372345" title="NUDE/WHITE Size: 6" itemid="1372345" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372345" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372346" title="NUDE/WHITE Size: 8" itemid="1372346" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372346" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372347" title="NUDE/WHITE Size: 10" itemid="1372347" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372347" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372348" title="NUDE/WHITE Size: 12" itemid="1372348" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372348" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372349" title="NUDE/WHITE Size: 14" itemid="1372349" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372349" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372350" title="NUDE/WHITE Size: 16" itemid="1372350" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">379.00</p>
+                                    <p><span id="orderitem1372350" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372351" title="NUDE/WHITE Size: 18" itemid="1372351" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">399.00</p>
+                                    <p><span id="orderitem1372351" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372352" title="NUDE/WHITE Size: 20" itemid="1372352" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">399.00</p>
+                                    <p><span id="orderitem1372352" class="deliverystatus"></span></p>
+                                 </td>
+                                 <td class="righttd">
+                                    <input name="item1372353" title="NUDE/WHITE Size: 22" itemid="1372353" class="quant" length="8" value="" stylenumber="7396" type="text" min="0" pattern="[0-9]*">
+                                    <p style="color:green">399.00</p>
+                                    <p><span id="orderitem1372353" class="deliverystatus"></span></p>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card card-default">
+                                    <div class="card-header card-header-border-bottom"><h2>Product Detail</h2></div>
+                                    <div class="card-body product-detail">
+                                        <div class="row">
+                                            <div class="col-xl-8 col-lg-8">
+                                                <div class="row">
+                                                    <div class="single-pro-img">
+                                                        <div class="single-product-scroll">
+                                                            <div class="single-product-cover">
+                                                                <div class="single-slide zoom-image-hover"><img class="img-responsive" src="assets/img/products/jasz-2022s-7300_a.jpg" alt="" /></div>
+                                                                <div class="single-slide zoom-image-hover"><img class="img-responsive" src="assets/img/products/jasz-2022s-7301_a.jpg" alt="" /></div>
+                                                                <div class="single-slide zoom-image-hover"><img class="img-responsive" src="assets/img/products/jasz-2022s-7302_a.jpg" alt="" /></div>
+                                                                <div class="single-slide zoom-image-hover"><img class="img-responsive" src="assets/img/products/jasz-2022s-7304_a.jpg" alt="" /></div>
+                                                                <div class="single-slide zoom-image-hover"><img class="img-responsive" src="assets/img/products/jasz-2022s-7306_a.jpg" alt="" /></div>
+                                                            </div>
+                                                            <div class="single-nav-thumb">
+                                                                <div class="single-slide"><img class="img-responsive" src="assets/img/products/jasz-2022s-7300_a.jpg" alt="" /></div>
+                                                                <div class="single-slide"><img class="img-responsive" src="assets/img/products/jasz-2022s-7301_a.jpg" alt="" /></div>
+                                                                <div class="single-slide"><img class="img-responsive" src="assets/img/products/jasz-2022s-7302_a.jpg" alt="" /></div>
+                                                                <div class="single-slide"><img class="img-responsive" src="assets/img/products/jasz-2022s-7304_a.jpg" alt="" /></div>
+                                                                <div class="single-slide"><img class="img-responsive" src="assets/img/products/jasz-2022s-7306_a.jpg" alt="" /></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                          
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="footer mt-auto">
+                    <div class="copyright bg-white">
+                        <p>Copyright &copy; <span id="ec-year"></span><a class="text-primary" href="" target="_blank">&nbsp;Jasz Admin Dashboard</a>. All Rights Reserved.</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+        <script src="assets/plugins/jquery/jquery-3.5.1.min.js"></script>
+        <script src="assets/plugins/jquery/jquery.notify.min.js"></script>
+        <script src="assets/plugins/jquery/jquery.bundle.notify.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/plugins/simplebar/simplebar.min.js"></script>
+        <script src="assets/plugins/jquery-zoom/jquery.zoom.min.js"></script>
+        <script src="assets/plugins/slick/slick.min.js"></script>
+        <script src="assets/plugins/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/plugins/options-sidebar/optionswitcher.js"></script>
+        <script src="assets/js/ekka.js"></script>
+    </body>
+</html>

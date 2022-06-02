@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>::demo::</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Default Description">
+      <meta name="keywords" content="fashion, store, E-commerce">
+      <meta name="robots" content="*">
+      <link rel="icon" href="#" type="image/x-icon">
+      <link rel="shortcut icon" href="#" type="image/x-icon">
+      <!-- CSS Style -->
+      <link rel="stylesheet" type="text/css" href="stylesheet/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="stylesheet/font-awesome.css" media="all">
+      <link rel="stylesheet" type="text/css" href="stylesheet/revslider.css" >
+      <link rel="stylesheet" type="text/css" href="stylesheet/owl.carousel.css">
+      <link rel="stylesheet" type="text/css" href="stylesheet/owl.theme.css">
+      <link rel="stylesheet" type="text/css" href="stylesheet/jquery.bxslider.css">
+      <link rel="stylesheet" type="text/css" href="stylesheet/jquery.mobile-menu.css">
+      <link rel="stylesheet" href="stylesheet/simple-line-icons.css">
+      <link rel="stylesheet" type="text/css" href="stylesheet/style.css" media="all">
+      <link rel="stylesheet" type="text/css" href="stylesheet/responsive.css" media="all">
+      <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <script src="js/jquery.min.js"></script> 
+   </head>
+   <body>
+      <div id="page">
+         <!--container-->
+         <div class="content">
+           <section class="annoucement" id="demo" >
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6 col-md-offset-3">
+                   <marquee class="marquee" onMouseOver="this.stop()" onMouseOut="this.start()">Care For Tails Clearance Sale - Minimum 40% Off <b>SHOP NOW</b></marquee>
+                  </div>
+                </div>
+              </div>
+            </section>
+         <div class="main-ms-ts">
+            <img src="images/logo.png">
+         </div>
+         <section class="top-bar">
+            <div class="container top_bar_container">
+               <div class="row top_row" >
+                  <div class="col-md-3">
+                     <div class="logo-agn-fdgf">
+                        <a href="#" title="index">
+                           <div><img src="images/logo.png" alt="logo"></div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-md-5">
+                     <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search Products..." aria-describedby="basic-addon2">
+                        <span class="input-group-addon" id="basic-addon2"><i class="fa fa-search" aria-hidden="true"></i></span>
+                     </div>
+                  </div>
+                  <div class="col-md-5">
+                     <div class="left-srd">
+                        <ul>
+                           <li><button id="myBtn"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; Select Your Pincode</button></li>
+                           <li><img src="images/heart.png"></li>
+                           <li class="cart_top">
+                              <img src="images/custom/icon_3.png">
+                              <span>0</span>
+                           </li>
+                           <li><img src="images/user1.png"></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="bottom-bar-mns">
+            <div class="container">
+               <div class="row bottom_row">
+                  <div class="fl-nav-menu col-md-10">
+                     <nav>
+                        <div class="mm-toggle-wrap">
+                           <div class="mm-toggle"><i class="icon-align-justify"></i><span class="mm-label">Menu</span> </div>
+                        </div>
+                        <div class="nav-inner">
+                           <!-- BEGIN NAV -->
+                           <ul id="nav" class="hidden-xs">
+                              <li class=" mega-menu active"> <a class="level-top" href="#"><span>Home</span></a></li>
+                              <li class="mega-menu link_small"> <a class="level-top" href="#"><span>Dog</span></a> </li>
+                              <li class="mega-menu link_small"> <a class="level-top" href="#"><span>Cats</span></a> </li>
+                              <li class="mega-menu link_small"> <a class="level-top" href="#"><span>Bird</span></a> </li>
+                              <li class="mega-menu link_small"> <a class="level-top" href="#"><span>Fish</span></a> </li>
+                              <li class="mega-menu link_small"> <a class="level-top" href="#"><span>Offers</span></a> </li>
+                              <li class="mega-menu link_small"> <a class="level-top" href="#"><span>Blogs</span></a> </li>
+                              <li class="mega-menu link_small"> <a class="level-top" href="#"><span>Fresh Foods</span></a> </li>
+                           </ul>
+                           <!--nav--> 
+                        </div>
+                     </nav>
+                  </div>
+                  <div class="left-srd col-md-2 " >
+                     <button class="contact_btn">Contact Us</button></li>
+                  </div>
+                  <div class="left-srd second_left">
+                     <ul>
+                        <li><button id="myBtn2"> Pincode</button></li>
+                        <li><img src="images/heart.png"></li>
+                        <li class="cart_top">
+                           <img src="images/custom/icon_3.png">
+                           <span>0</span>
+                        </li>
+                        <li><img src="images/user1.png"></li>
+                     </ul>
+                  </div>
+                  <!-- The Modal -->
+                  <div id="myModal" class="modal">
+                     <!-- Modal content -->
+                     <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="modal-header">
+                           <h1>Enter Your Location Pincode</h1>
+                        </div>
+                        <div class="modal-body">
+                           <div class="input-group ">
+                              <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                              <input type="text" class="form-control" placeholder="Enter Your Pincode" aria-describedby="sizing-addon1">
+                           </div>
+                        </div>
+                        <div class="modal-footer">
+                           <button class="submit_button">Submit</button>
+                        </div>
+                     </div>
+                  </div>
+                  <!--row-->
+               </div>
+            </div>
+         </section>
+     
+         <div class="breadcrumbs product_breadcrumb">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xs-12">
+                     <ul>
+                        <li class="home"> <a href="index.html" title="Go to Home Page" class="product_home_text">Home</a> <span>&rsaquo; </span> </li>
+                        <li class="category1601"> <strong>Product Detail</strong> </li>
+                     </ul>
+                  </div>
+                  <!--col-xs-12--> 
+               </div>
+               <!--row--> 
+            </div>
+            <!--container--> 
+         </div>   
+
+      <!-- BEGIN Main Container -->
+      <div class="main-container col1-layout wow bounceInUp animated">
+         <div class="main">
+            <div class="col-main">
+               <!-- Endif Next Previous Product -->
+               <div class="product-view wow bounceInUp animated" itemscope="" itemtype="http://schema.org/Product" itemid="#product_base">
+                  <div id="messages_product_view"></div>
+                  <!--product-next-prev-->
+                  <div class="product-essential container">
+                     <div class="row">
+                        <form action="#" method="post" id="product_addtocart_form">
+                           <!--End For version 1, 2, 6 -->
+                           <!-- For version 3 -->
+
+                           <div class="product-img-box col-lg-6 col-sm-5 col-xs-12">
+                            <div class="product-image row">
+                               <div class="col-md-3 first_col">
+                                  <div class="more-views">
+                                   <div class="slider-items-products">
+                                      <div id="gallery_01" class="product-flexslider hidden-buttons product-img-thumb">
+                                         <div class="slider-items slider-width-col4 block-content">
+                                            <div class="more-views-items"> <a href="#" data-image="images/ct2.jpg" data-zoom-image="images/ct2.jpg"> <img id="product-zoom0"  src="images/ct2.jpg" alt="product-image"/> </a></div>
+                                            <div class="more-views-items"> <a href="#" data-image="images/ct3.jpg" data-zoom-image="images/ct3.jpg"> <img id="product-zoom1"  src="images/ct3.jpg" alt="product-image"/> </a></div>
+                                            <div class="more-views-items"> <a href="#" data-image="images/ct4.jpg" data-zoom-image="images/ct4.jpg"> <img id="product-zoom2"  src="images/ct4.jpg" alt="product-image"/> </a></div>
+                                           <div class="more-views-items"> <a href="#" data-type="video"> 
+                                             <img id=""  src="images/ct7.jpg" alt="product-video"/> </a></div> 
+                                         </div>
+                                      </div>
+                                   </div>
+                                 </div> 
+                                 </div>
+                              <div class="col-md-9 second_col">
+                               <div class="product-full" id="product-full"> 
+                                 <video width="100%"  controls=""  style="display:none">
+                                    <source src="images/cat_video.mp4"  type="video/mp4">
+                                 </video>
+                                   <img id="product-zoom" src="images/ct2.jpg" data-zoom-image="images/ct2.jpg" alt="product-image"/>
+                                    </div> 
+                                 </div>
+
+                              </div>
+                              <!-- end: more-images --> 
+
+                              <div class="about_div">
+                                 <h1 class="a-size-base-plus "> About this item </h1>
+                                 <ul class="shipping-pro">
+                                    <li>Provides dogs the 5 Signs of Good Health - a CareFood assurance!.</li>
+                                    <li>Puppies need 24x Protein, 9.5x Calcium & 53x Iron B12 than human babies, an ideal treat.</li>
+                                    <li>Contains 24% crude Protein, 10% crude Fat, and 5% crude Fibre.</li>
+                                    <li>Ideal for Pugs, Beagle to Labrador, Golden Retriever & German shepherd.</li>
+                                    <li>Developed by experts at the Waltham Centre for Pet Nutrition.</li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <!--End For version 1,2,6-->
+                           <!-- For version 3 -->
+                           <div class="product-shop col-lg-6 col-sm-7 col-xs-12">
+                             <div class="product-name">
+                                 <h1>Brand Name</h1>
+                              </div>
+                              <div class="pro_subtitle">
+                                 Tittle
+                              </div>
+                              <div class="ratings">
+                                 <ul>
+                                    <li><a href=""><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                 </ul>
+                                 <p class="rating-links"> <a href="#">4.5</a> <span class="separator">|</span> <a href="#">10 Review</a> </p>
+                              </div>
+                               <div class="price-block">
+                                 <div class="price-box">
+                                    <p class="special-price">
+                                     <span class="price-label"><a href="">₹ 299.00 </a></span>
+                                    <span id="product-price-48" class="price"><a href="">&nbsp; ₹ 499.00</a></span> </p>
+                                    <p class="pp_price_inc">(Inclusive of all taxes)</p>
+                                    
+                                    <p class="product-page-info__price-sale-details" >You Save: ₹ 4.95 (9%)
+                                    </p>
+                                 </div>
+                              </div>
+                              <div id="expiryDate_feature_div" class="celwidget">
+                                  <span class="a-size-base"><b> Best Before:&nbsp;&nbsp;</b> </span>
+                                  <span> 15 Oct 2022 </span> <br> 
+                              </div>
+                               <div class="country_div">
+                                 <span class="a-size-base"><b>Country Origin:&nbsp;&nbsp;</b> </span>
+                                  <span> India,Banglore</span> <br>
+                              </div>
+                              <div class="delivery_div">
+                                 <span class="a-size-base"><b>Delivery Timing:&nbsp;&nbsp;</b> </span>
+                                  <span> Tomorrow</span> <br>
+                              </div>
+                              <div id="Kilogram_div" class="pack">
+                                 <h5>Style Name:</h5>
+                                 <button  class="btnchange btn-kg1 btn-kg" title="Kilogram" type="button">Pack Of 12</button>
+                                 <button  class="btnchange btn-kg1" title="Kilogram" type="button">Pack Of 25</button>
+                                 <button  class="btnchange btn-kg1" title="Kilogram" type="button">Pack Of 50</button>
+                              </div>
+                              <div class="varition_div">
+                                  <h5>Pattern Name:</h5>
+                                  <select name="food" id="food">
+                                     <option value="Chicken"> Chicken Biscuit + Carrot Flavour Sticks </option>
+                                     <option value="Biscuit"> Chicken Biscuit + Chicken Liver Chunks </option>
+                                     <option value="Sticks"> Chicken Biscuit + Chicken Sticks </option>
+                                     <option value="Dog_Food"> Chicken Biscuit + Adult Dog Food,10kg </option>
+                                   </select>
+                              <table class="a-normal a-spacing-micro">
+                                 <tbody>
+                                    <tr class="a-spacing-small po-brand">
+                                       <td class="a-span3"> <span class="a-size-base a-text-bold">Brand</span> </td>
+                                       <td class="a-span9">    <span class="a-size-base">CareFood</span>   </td>
+                                    </tr>
+                                    <tr class="a-spacing-small po-flavor">
+                                       <td class="a-span3"> <span class="a-size-base a-text-bold">Flavour</span> </td>
+                                       <td class="a-span9">    <span class="a-size-base">Chicken</span>   </td>
+                                    </tr>
+                                    <tr class="a-spacing-small po-target_species">
+                                       <td class="a-span3"> <span class="a-size-base a-text-bold">Target Species</span> </td>
+                                       <td class="a-span9">    <span class="a-size-base">Dog</span>   </td>
+                                    </tr>
+                                    <tr class="a-spacing-small po-item_form">
+                                       <td class="a-span3"> <span class="a-size-base a-text-bold">Item Form</span> </td>
+                                       <td class="a-span9">    <span class="a-size-base">Dry</span>   </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                              </div>
+                             
+                                 <p class="availability in-stock"><span>In Stock</span></p>
+                              <div class="add-to-box">
+                                 <div class="add-to-cart">
+                                    <div class="pull-left clearfix">
+                                       <div class="custom pull-left">
+                                          <button onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty ) &amp;&amp; qty > 0 ) result.value--;return false;" class="reduced items-count" type="button"><i class="fa fa-minus">&nbsp;</i></button>
+                                          <input type="text" class="input-text qty" title="Qty" value="1" maxlength="12" id="qty" name="qty">
+                                          <button onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;" class="increase items-count" type="button"><i class="fa fa-plus">&nbsp;</i></button>
+                                       </div>
+                                    </div>
+                                    <div class="btn-group">
+                                    <button onclick="productAddToCartForm.submit(this)" class="button btn-cart" title="Add to Cart" type="button">Add to Cart</button>
+                                      <div class="email-addto-box">
+                                    <div class="add-to-links">
+                                        <a class="link-wishlist" href="wishlist.html"><span>Add to Wishlist</span></a>
+                                    </div>
+                              </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              
+                              </div>
+                           <!--product-shop-->
+                           <!--Detail page static block for version 3-->
+                        </form>
+                     </div>
+                  </div>
+
+                  <section class="Product_detail_recent">
+                        <div class="container">
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <div class="hgjf-nj">
+                                    <h2>Recently Viewed</h2>
+                                    <img src="images/bnf.png">
+                                 </div>
+                              </div>
+                           </div>
+                            <div class="row ">
+                           <div  id="categorie_slider" class="offer-slider parallax parallax-2 ">
+                              <div class="categorie_slider slider-width-col6" style="display: flex;">
+                                 <div class="item">
+                                    <div class="categorie">
+                                       <a href="shop-grid.html" class="d-block">
+                                          <img src="images/category/cat_1.webp" alt="categories-image">
+                                          <h3>PUPPY FOOD</h3>
+                                       </a>
+                                    </div>
+                                 </div>
+                                 <div class="item ">
+                                    <div class="categorie">
+                                       <a href="shop-grid.html" class="d-block">
+                                          <img src="images/category/cat_2.webp" alt="categories-image">
+                                          <h3>ADULT DOG FOOD</h3>
+                                       </a>
+                                    </div>
+                                 </div>
+                                 <div class="item ">
+                                    <div class="categorie">
+                                       <a href="shop-grid.html" class="d-block">
+                                          <img src="images/category/cat_3.webp" alt="categories-image">
+                                          <h3>CHICKEN FREE</h3>
+                                       </a>
+                                    </div>
+                                 </div>
+                                 <div class="item ">
+                                    <div class="categorie">
+                                       <a href="shop-grid.html" class="d-block">
+                                          <img src="images/category/cat_4.webp" alt="categories-image">
+                                          <h3>GRAIN FREE</h3>
+                                       </a>
+                                    </div>
+                                 </div>
+                                 <div class="item ">
+                                    <div class="categorie">
+                                       <a href="shop-grid.html" class="d-block">
+                                          <img src="images/category/cat_5.webp" alt="categories-image">
+                                          <h3>WEIGHT MANAGE</h3>
+                                       </a>
+                                    </div>
+                                 </div>
+                                 <div class="item ">
+                                    <div class="categorie">
+                                       <a href="shop-grid.html" class="d-block">
+                                          <img src="images/category/cat_6.webp" alt="categories-image">
+                                          <h3>HYPOALLERGENIC</h3>
+                                       </a>
+                                    </div>
+                                 </div>
+                                       <div class="item ">
+                                    <div class="categorie">
+                                       <a href="shop-grid.html" class="d-block">
+                                          <img src="images/category/cat_7.webp" alt="categories-image">
+                                          <h3>ROYAL CANIN</h3>
+                                       </a>
+                                    </div>
+                                 </div>
+                                 <div class="item ">
+                                    <div class="categorie">
+                                       <a href="shop-grid.html" class="d-block">
+                                          <img src="images/category/cat_8.webp" alt="categories-image">
+                                          <h3>ORIJEN</h3>
+                                       </a>
+                                    </div>
+                                 </div>
+                                  <div class="item ">
+                                    <div class="categorie">
+                                       <a href="shop-grid.html" class="d-block">
+                                          <img src="images/category/cat_6.webp" alt="categories-image">
+                                          <h3>HYPOALLERGENIC</h3>
+                                       </a>
+                                    </div>
+                                 </div>
+                                       <div class="item ">
+                                    <div class="categorie">
+                                       <a href="shop-grid.html" class="d-block">
+                                          <img src="images/category/cat_7.webp" alt="categories-image">
+                                          <h3>ROYAL CANIN</h3>
+                                       </a>
+                                    </div>
+                                 </div>
+                                 <div class="item ">
+                                    <div class="categorie">
+                                       <a href="shop-grid.html" class="d-block">
+                                          <img src="images/category/cat_8.webp" alt="categories-image">
+                                          <h3>ORIJEN</h3>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        </div>
+                     </section>
+                  <!--product-essential-->
+                  <div class="product-collateral container">
+                     <ul id="product-detail-tab" class="nav nav-tabs product-tabs">
+                        <li class="active">
+                         <a href="#product_tabs_description" data-toggle="tab"> Product Description </a> </li>
+                         <li >
+                         <a href="#Features" data-toggle="tab"> Features </a> </li>
+                        <li> <a href="#reviews_tabs" data-toggle="tab">Customers Reviews</a> </li>
+                     </ul>
+                     <div id="productTabContent" class="tab-content">
+                        <div  id="product_tabs_description" class=" tab-pane fade in active ">
+                           <div class="std">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla. Donec a neque libero. Pellentesque aliquet, sem eget laoreet ultrices, ipsum metus feugiat sem, quis fermentum turpis eros eget velit. Donec ac tempus ante. Fusce ultricies massa massa. Mauris vel tellus non nunc mattis lobortis. vulputate adipiscing cursus eu, suscipit id nulla. Donec a neque libero. Pellentesque aliquet, sem eget laoreet ultrices, ipsum metus feugiat sem, quis fermentum turpis eros eget velit. Donec ac tempus ante. </p>
+                              <p> Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend laoreet congue. Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                              <ul>
+                                 <li>Mauris vel tellus non nunc mattis lobortis</li>
+                                 <li>Suspendisse aliquet urna pretium eros convallis</li>
+                                 <li>Vestibulum ante ipsumprimis in faucibus</li>
+                                 <li>Fusce ultricies massa massa</li>
+                              </ul>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla. Donec a neque libero. Pellentesque aliquet, sem eget laoreet ultrices, ipsum metus feugiat sem, quis fermentum turpis eros eget velit. Donec ac tempus ante. Fusce ultricies massa massa. Mauris vel tellus non nunc mattis lobortis. vulputate adipiscing cursus eu, suscipit id nulla. Donec a neque libero. Pellentesque aliquet, sem eget laoreet ultrices, ipsum metus feugiat sem, quis fermentum turpis eros eget velit. Donec ac tempus ante. </p>
+                           </div>
+                        </div>
+                        <div class="tab-pane fade in" id="Features">
+                           <div class="std">
+                              <ul>
+                                 <li><strong>Name:</strong> Scanpan Classic Covered</li>
+                                 <li><strong>Color:</strong> Orange , Pink , Yellow </li>
+                                 <li><strong>Size:</strong>  xl, l , m , sl</li>
+                                 <li><strong>Length:</strong>  102cm, 110cm , 115cm </li>
+                                 <li><strong>Brand:</strong> Nike, Religion, Diesel, Monki </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="tab-pane fade in" id="reviews_tabs">
+                           <div class="woocommerce-Reviews container">
+                              <div class="comment-respond row">
+                                 <div class="sin-rattings">
+                                    <div class="star-author-all">
+                                        <div class="product-rating f-left">
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            <span>(5)</span>
+                                        </div>
+                                        <div class="ratting-author f-right">
+                                            <h3>tayeb rayed</h3>
+                                            <span>12:24</span>
+                                            <span>9 March 2018</span>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nost rud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nost.</p>
+                                </div>
+                                 <span class="comment-reply-title">Add your Comments :</span>      
+                                 <form action="#" method="post" class="comment-form" novalidate>
+                                    <p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>
+                                    <div class="comment-form-rating">
+                                       <label id="rating">Your rating</label>
+                                       <p class="stars">
+                                          <span>
+                                          <a class="star-1" href="#">1</a>
+                                          <a class="star-2" href="#">2</a>
+                                          <a class="star-3" href="#">3</a>
+                                          <a class="star-4" href="#">4</a>
+                                          <a class="star-5" href="#">5</a>
+                                          </span>
+                                       </p>
+                                    </div>
+                                    
+                                    <div class="comment-form-author col-md-6">
+                                       <label for="author">Name <span class="required">*</span></label> 
+                                       <input id="author" name="author" placeholder="Name" type="text" value="" size="30" required>
+                                    </div>
+                                    <div class="comment-form-email col-lg-6">
+                                       <label for="email">Email <span class="required">*</span></label> 
+                                       <input id="email" name="email" type="email"placeholder="Email"  value="" size="30"  required>
+                                    </div>
+                                    <div class="comment-form-comment col-md-12">
+                                       <label>Your review <span class="required">*</span></label>
+                                       <textarea id="comment" name="comment"placeholder="Comments"  cols="45" rows="8" required></textarea>
+                                    </div>
+                                    <div class="form-submit text-center">
+                                       <input name="submit" type="submit" id="submit" class="submit" value="Submit"> 
+                                    </p>
+                                 </form>
+                              </div>
+                              <!-- #respond -->
+                           
+                                 <div class="clear"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+                      <section class="popular_catgories">
+                        <div class="container">
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <div class="hgjf-nj">
+                                    <h2>Top Selling Category</h2>
+                                    <img src="images/bnf.png">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row ">
+                              <div  id="categories" class="offer-slider parallax parallax-2">
+                                 <div class="disable_slider slider-width-col6">
+                                    <div class="item col-xs-6">
+                                       <div class="categories-box">
+                                          <a href="shop-grid.html" class="d-block">
+                                             <img src="images/categories1.jpg" alt="categories-image">
+                                             <h3>Dog food</h3>
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="item col-xs-6">
+                                       <div class="categories-box">
+                                          <a href="shop-grid.html" class="d-block">
+                                             <img src="images/categories2.jpg" alt="categories-image">
+                                             <h3>Cat food</h3>
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="item col-xs-6">
+                                       <div class="categories-box">
+                                          <a href="shop-grid.html" class="d-block">
+                                             <img src="images/categories3.jpg" alt="categories-image">
+                                             <h3>Pet accessories</h3>
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="item col-xs-6">
+                                       <div class="categories-box">
+                                          <a href="shop-grid.html" class="d-block">
+                                             <img src="images/categories4.jpg" alt="categories-image">
+                                             <h3>Dry Fruits</h3>
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="item col-xs-6">
+                                       <div class="categories-box">
+                                          <a href="shop-grid.html" class="d-block">
+                                             <img src="images/categories5.jpg" alt="categories-image">
+                                             <h3>Pet Toys</h3>
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="item col-xs-6">
+                                       <div class="categories-box">
+                                          <a href="shop-grid.html" class="d-block">
+                                             <img src="images/categories6.jpg" alt="categories-image">
+                                             <h3>Cat Toys</h3>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </section>
+                     <!--product-collateral-->
+                    <section class="banner-bottom-th-productdf">
+                        <div class="container">
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <div class="hgjf-nj">
+                                    <h2>YOU CAN ALSO BUY</h2>
+                                    <img src="images/bnf.png">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row  tabs_row">
+                              <div  id="testimonialss" class="offer-slider parallax parallax-2">
+                                 <div class="slider-itemsss slider-width-col6">
+                                    <div class="item ads-gh">
+                                       <div class="image-kldhg">
+                                          <img src="images/sn-1.jpg">
+                                       </div>
+                                       <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                       <i class="fa fa-eye" aria-hidden="true"></i>
+                                       <div class="bys-kl"><button class="hjdf-gebnc"> Add to Cart</button></div>
+                                       <div class="title-hjfg">Suretin Mipen Ruma</div>
+                                       <div class="price-hjfgvd"> $21.00</div>
+                                    </div>
+                                    <div class="item ads-gh">
+                                       <div class="image-kldhg"><img src="images/sn-2.jpg"></div>
+                                       <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                       <i class="fa fa-eye" aria-hidden="true"></i>
+                                       <div class="bys-kl"><button class="hjdf-gebnc"> Add to Cart</button></div>
+                                       <div class="title-hjfg">Suretin Mipen Ruma</div>
+                                       <div class="price-hjfgvd"> $21.00</div>
+                                    </div>
+                                    <div class=" item ads-gh ">
+                                       <div class="image-kldhg"><img src="images/sn-3.jpg"></div>
+                                       <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                       <i class="fa fa-eye" aria-hidden="true"></i>
+                                       <div class="bys-kl"><button class="hjdf-gebnc"> Add to Cart</button></div>
+                                       <div class="title-hjfg">Suretin Mipen Ruma</div>
+                                       <div class="price-hjfgvd"> $21.00</div>
+                                    </div>
+                                    <div class="item ads-gh">
+                                       <div class="image-kldhg"><img src="images/sn-4.jpg"></div>
+                                       <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                       <i class="fa fa-eye" aria-hidden="true"></i>
+                                       <div class="bys-kl"><button class="hjdf-gebnc"> Add to Cart</button></div>
+                                       <div class="title-hjfg">Suretin Mipen Ruma</div>
+                                       <div class="price-hjfgvd"> $21.00</div>
+                                    </div>
+                                    <div class="item ads-gh">
+                                       <div class="image-kldhg"><img src="images/sn-5.jpg"></div>
+                                       <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                       <i class="fa fa-eye" aria-hidden="true"></i>
+                                       <div class="bys-kl"><button class="hjdf-gebnc"> Add to Cart</button></div>
+                                       <div class="title-hjfg">Suretin Mipen Ruma</div>
+                                       <div class="price-hjfgvd"> $21.00</div>
+                                    </div>
+                                    <div class="item ads-gh">
+                                       <div class="image-kldhg"><img src="images/sn-4.jpg"></div>
+                                       <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                       <i class="fa fa-eye" aria-hidden="true"></i>
+                                       <div class="bys-kl"><button class="hjdf-gebnc"> Add to Cart</button></div>
+                                       <div class="title-hjfg">Suretin Mipen Ruma</div>
+                                       <div class="price-hjfgvd"> $21.00</div>
+                                    </div>
+                                    <div class="item ads-gh">
+                                       <div class="image-kldhg"><img src="images/sn-5.jpg"></div>
+                                       <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                       <i class="fa fa-eye" aria-hidden="true"></i>
+                                       <div class="bys-kl"><button class="hjdf-gebnc"> Add to Cart</button></div>
+                                       <div class="title-hjfg">Suretin Mipen Ruma</div>
+                                       <div class="price-hjfgvd"> $21.00</div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </section>
+                     <!-- end related product -->
+                  </div>
+                  <!--box-additional-->
+                  <!--product-view-->
+               </div>
+            </div>
+            <!--col-main-->
+         </div>
+         <!--main-container-->
+      </div>
+      <!--col1-layout-->
+      <!-- For version 1,2,3,4,6 -->
+       <footer>
+            <!-- BEGIN INFORMATIVE FOOTER -->
+            <div class="footer-inner">
+               <div class="footer-middle">
+                  <div class="container footer_container">
+                     <div class="row">
+                        <div class="col-md-3 col-sm-12">
+                           <div class="footer-column">
+                              <img src="images/footer_logo.png">
+                              <p>If you have any question, please contact us at <a class="text-primary" href="mailto:support@gmail.com">support@gmail.com</a></p>
+                              <ul class="links">
+                                 <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>No 40 Baia Sreet 133/2 Delhi ,India</a></li>
+                                 <li><a href="#" ><i class="fa fa-phone" aria-hidden="true"></i>91+95485132586</a></li>
+                              </ul>
+                              <ul class="social_icons ">
+                                 <li><a href="#" class="social_links"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                 <li><a href="#" class="social_links"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                 </li>
+                                 <li><a href="#" class="social_links"><i class="fa fa-pinterest" aria-hidden="true"></i>
+                                    </a>
+                                 </li>
+                                 <li><a href="#" class="social_links"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-md-2 col-sm-3">
+                           <div class="footer-column new_column">
+                              <h4>Corporate</h4>
+                              <ul class="links">
+                                 <li><a href="#">About Us</a></li>
+                                 <li><a href="#">Contact Us</a></li>
+                                 <li><a href="#">FAQs</a></li>
+                                 <li><a href="#">Terms Of Use</a></li>
+                                 <li><a href="#">Birthday Club</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-md-2 col-sm-3">
+                           <div class="footer-column new_column">
+                              <h4>Information</h4>
+                              <ul class="links">
+                                 <li><a href="#">Privacy Policy</a></li>
+                                 <li><a href="#">Refund Policy</a></li>
+                                 <li><a href="#">Shipping Policy</a></li>
+                                 <li><a href="#">Exchange Policy</a></li>
+                                 <li><a href="#">Track Order</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-md-2 col-sm-3">
+                           <div class="footer-column new_column">
+                              <h4>Services</h4>
+                              <ul class="links">
+                                 <li><a href="#">Grooming</a></li>
+                                 <li><a href="#">Positive Dog Training</a></li>
+                                 <li><a href="#">Veterinary Services</a></li>
+                                 <li><a href="#">Petco Insurance</a></li>
+                                 <li><a href="#">Pet Adoption</a></li>
+                                 <li><a href="#">Resource Center</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                           <div class="footer-column new_column">
+                              <h4>Newsletter</h4>
+                              <p>Get Update On Best Offers & Informations For Your Pet</p>
+                              <div class="input-group mb-3">
+                                 <input type="text" class="form-control" placeholder="Newsletter" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                 <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon2">Subscribe</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--container--> 
+            </div>
+            <!--footer-inner--> 
+            <!--footer-middle-->
+            <div class="footer-top">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-6 col-xs-12 coppyright"> © 2020 Domain Name. All Rights Reserved </div>
+                     <div class="col-xs-12 col-sm-6">
+                        <div class="payment-accept flrt-kjd"> <img src="images/paymet-1.png" alt=""> </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--footer-bottom--> 
+            <!-- BEGIN SIMPLE FOOTER --> 
+         </footer>
+         <!-- End For version 1,2,3,4,6 --> 
+      </div>
+      <!--page--> 
+      <!-- Mobile Menu-->
+    <div id="mobile-menu">
+         <button id="hide" onclick="myFunction()" class="hide_mobilemenu"><i class="fa fa-times" aria-hidden="true"></i></button>
+         <ul>
+            <li>
+               <div class="home"><a href="#">Home</a> </div>
+            </li>
+            <li>
+               <a href="#">Dog</a>
+            </li>
+            <li><a href="#">Cats</a></li>
+            <li><a href="#">Bird</a></li>
+            <li><a href="#">Fishs</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Fresh Foods</a></li>
+            <li><a href="">Contact Us</a></li>
+         </ul>
+      </div>
+      <!-- JavaScript --> 
+      <script src="js/jquery.min.js"></script> 
+      <script src="js/common.js"></script>
+      <script src="js/bootstrap.min.js"></script> 
+      <script src="js/parallax.js"></script> 
+      <script src="js/revslider.js"></script> 
+      <script src="js/jquery.bxslider.min.js"></script> 
+      <script src="js/owl.carousel.min.js"></script> 
+       <script src="js/cloud-zoom.js"></script>
+      <script src="js/jquery.mobile-menu.min.js"></script> 
+      <script src="js/countdown.js"></script> 
+       <script>
+         jQuery(document).ready(function(){
+            jQuery('.more-views-items a').on('click',function(){
+               console.log('Click Product');
+               const type_src = jQuery(this).data('type');
+               console.log(`Type of ${type_src}`);
+               if(type_src==="video"){
+                  jQuery('.product-full img').css('display','none');
+                  jQuery('.zoomContainer').css('display','none');
+                  jQuery('.product-full video').css('display','inline-block');
+               }else{
+                  jQuery('.product-full video').css('display','none');
+                  jQuery('.zoomContainer').css('display','inline-block');
+                  jQuery('.product-full img').css('display','inline-block');
+
+               }
+            });
+         })
+      </script>
+      <script>
+      function myFunction() {
+           var x = document.getElementById("mobile-menu");
+             x.style.display = "none";
+         } 
+      </script>
+      <script>
+         jQuery(document).ready(function(){
+            jQuery(".mega-menu").hover(function () {
+               jQuery('.active').removeClass('active');
+               jQuery(this).toggleClass("active");
+            });
+         })
+         document.getElementById(".active").click();
+      </script>
+      <script>
+         jQuery(document).ready(function(){
+            jQuery(".btnchange").click(function () {
+               jQuery('.btn-kg').removeClass('btn-kg');
+               jQuery(this).toggleClass("btn-kg");
+            });
+         })
+      </script>
+      <script>
+         function HideMe()
+         {
+             jQuery('.popup1').hide();
+             jQuery('#fade').hide();
+         }
+      </script> 
+      <!-- Hot Deals Timer 1--> 
+   
+      <script type="text/javascript">
+         // Get the modal
+         var modal = document.getElementById("myModal");
+         
+         // Get the button that opens the modal
+         var btn = document.getElementById("myBtn");
+         
+         // Get the <span> element that closes the modal
+         var span = document.getElementsByClassName("close")[0];
+         
+         // When the user clicks on the button, open the modal
+         btn.onclick = function() {
+           modal.style.display = "block";
+         }
+         
+         // When the user clicks on <span> (x), close the modal
+         span.onclick = function() {
+           modal.style.display = "none";
+         }
+         
+         // When the user clicks anywhere outside of the modal, close it
+         window.onclick = function(event) {
+           if (event.target == modal) {
+             modal.style.display = "none";
+           }
+         }
+         
+      </script> 
+      <script type="text/javascript">
+         // Get the modal
+         var modal = document.getElementById("myModal");
+         
+         // Get the button that opens the modal
+         var btn = document.getElementById("myBtn2");
+         
+         // Get the <span> element that closes the modal
+         var span = document.getElementsByClassName("close")[0];
+         
+         // When the user clicks on the button, open the modal
+         btn.onclick = function() {
+           modal.style.display = "block";
+         }
+         
+         // When the user clicks on <span> (x), close the modal
+         span.onclick = function() {
+           modal.style.display = "none";
+         }
+         
+         // When the user clicks anywhere outside of the modal, close it
+         window.onclick = function(event) {
+           if (event.target == modal) {
+             modal.style.display = "none";
+           }
+         }
+         
+      </script>
+     
+   </body>
+</html>
+
